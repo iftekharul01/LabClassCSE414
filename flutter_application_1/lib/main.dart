@@ -28,15 +28,14 @@ class Lab05 extends StatelessWidget {
                   color: Colors.yellow,
                   size: 50,
                 ),
+                Image(
+                  image: AssetImage("assets/shoe.png"),
+                  height: 100,
+                  width: 100,
+                ),
                 Icon(
                   Icons.star,
                   color: Colors.yellow,
-                  size: 50,
-                ),
-                
-                Icon(
-                  Icons.star,
-                  color: Colors.grey,
                   size: 50,
                 ),
               ],
