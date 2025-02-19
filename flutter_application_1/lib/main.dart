@@ -1,37 +1,53 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(Test());
+void main() {
+  runApp(Lab05());
+}
 
-class Test extends StatelessWidget {
-  const Test({super.key});
+class Lab05 extends StatelessWidget {
+  const Lab05({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter UI - Icon',
+      title: "Star Icon",
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Icon'),
-          centerTitle: true,
-          backgroundColor: Colors.blue,
-        ),
-        body: Row(
-          children: [
-            Icon(
-              Icons.memory,
-              size: 60,
-              color: Colors.red,
-            ),
-            Text(
-              "Flutter Row",
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 40,
+          appBar: AppBar(
+            title: Text("Star Icon"),
+            backgroundColor: Colors.amber,
+            centerTitle: true,
+          ),
+          body: Row(
+            children: [
+              Icon(
+                Icons.star,
+                color: Colors.yellow,
+                size: 50,
               ),
-            ),
-          ],
-        ),
-      ),
+              Icon(
+                Icons.star,
+                color: Colors.yellow,
+                size: 50,
+              ),
+
+              Icon(
+                Icons.star,
+                color: Colors.grey,
+                size: 50,
+              ),
+              Icon(
+                Icons.star,
+                color: Colors.grey,
+                size: 50,
+              ),
+              Icon(
+                Icons.star,
+                color: Colors.grey,
+                size: 50,
+              ),
+            ],
+          )),
     );
   }
 }
