@@ -16,31 +16,26 @@ class Lab05 extends StatelessWidget {
           appBar: AppBar(
             title: Text("Star Icon"),
             backgroundColor: Colors.amber,
-            centerTitle: true,
           ),
           body: Container(
-            height: double.infinity,
-            child: Row(
+            width: double.infinity,
+            child: SingleChildScrollView(
+              scrollDirection: Axis.vertical,
+            child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Icon(
-                  Icons.star,
-                  color: Colors.yellow,
-                  size: 50,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: List.generate(
+                100, 
+                (index)=>Icon(
+                  Icons.airplanemode_off,
+                  color: Colors.blue,
+                  size: index.toDouble(),
                 ),
-                Image(
-                  image: AssetImage("assets/shoe.png"),
-                  height: 100,
-                  width: 100,
-                ),
-                Icon(
-                  Icons.star,
-                  color: Colors.yellow,
-                  size: 50,
-                ),
-              ],
+              ),
             ),
-          )),
+            ),
+          ),
+          ),
     );
   }
 }
