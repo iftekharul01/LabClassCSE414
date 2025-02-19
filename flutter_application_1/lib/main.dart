@@ -13,12 +13,13 @@ class Test extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Icon'),
           centerTitle: true,
+          backgroundColor: Colors.blue,
         ),
         body: Row(
           children: [
             Icon(
               Icons.memory,
-              size:60,
+              size: 60,
               color: Colors.red,
             ),
             Text(
